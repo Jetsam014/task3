@@ -27,8 +27,8 @@ Rails.application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
-
+  #config.assets.compile = false
+  config.assets.compile = true
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
@@ -91,4 +91,16 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-end
+  
+  config.paperclip_defaults = {
+      storage: :s3,
+      preserve_files: true,
+      s3_host_name: 's3-ap-northeast-1.amazonaws.com',
+      s3_credentials: {
+      access_key_id: ENV['AWS_ACCESS_KEY_ID'],
+      secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'],
+      s3_region: 'ap-northeast-1'
+     },
+      bucket: 'potepanecmkpo'#bucket: 'potepanecmkpo'
+    }
+ end
