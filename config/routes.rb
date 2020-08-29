@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   # This line mounts Solidus's routes at the root of your application.
   # This means, any requests to URLs such as /products, will go to Spree::ProductsController.
+<<<<<<< HEAD
 
+=======
+>>>>>>> db7f7219a6469ebcad43d2e4367b6d5eb0e8a87e
   mount Spree::Core::Engine, at: '/'
 
   namespace :potepan do
