@@ -68,7 +68,6 @@ GEM
     awesome_nested_set (3.2.1)
       activerecord (>= 4.0.0, < 7.0)
     aws-eventstream (1.1.0)
-<<<<<<< HEAD
     aws-sdk (2.11.575)
       aws-sdk-resources (= 2.11.575)
     aws-sdk-core (2.11.575)
@@ -76,15 +75,6 @@ GEM
       jmespath (~> 1.0)
     aws-sdk-resources (2.11.575)
       aws-sdk-core (= 2.11.575)
-=======
-    aws-sdk (2.11.572)
-      aws-sdk-resources (= 2.11.572)
-    aws-sdk-core (2.11.572)
-      aws-sigv4 (~> 1.0)
-      jmespath (~> 1.0)
-    aws-sdk-resources (2.11.572)
-      aws-sdk-core (= 2.11.572)
->>>>>>> db7f7219a6469ebcad43d2e4367b6d5eb0e8a87e
     aws-sigv4 (1.2.2)
       aws-eventstream (~> 1, >= 1.0.2)
     bcrypt (3.1.15)
