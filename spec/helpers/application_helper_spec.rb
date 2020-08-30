@@ -5,6 +5,7 @@ RSpec.describe ApplicationHelper, type: :helper do
     it "displayed full title" do
       expect(full_title("title")).to eq "title - BIGBAG Store"
       expect(full_title("")).to eq "BIGBAG Store"
+      expect(full_title(nil)).to eq "BIGBAG Store"
     end
   end
 end
