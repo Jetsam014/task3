@@ -1,0 +1,6 @@
+example_id                                       | status | run_time        |
+------------------------------------------------ | ------ | --------------- |
+./spec/features/products_spec.rb[1:1:1]          | passed | 0.13883 seconds |
+./spec/features/products_spec.rb[1:1:2]          | passed | 0.11246 seconds |
+./spec/helpers/application_helper_spec.rb[1:1:1] | passed | 0.03345 seconds |
+./spec/request/products_spec.rb[1:1:1]           | passed | 3.9 seconds     |
