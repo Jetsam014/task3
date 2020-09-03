@@ -1,5 +1,5 @@
-<% provide(:title, @product.name)%>
-<%= render 'light_section',product_name: @product.name %>
+<% provide(:title, @product.name) %>
+  <%= render 'light_section', product_name: @product.name %>
 <!-- MAIN CONTENT SECTION -->
 <section class="mainContent clearfix">
   <div class="container">
@@ -10,9 +10,9 @@
             <div id="carousel" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <% @product.images.each_with_index do |image, i| %>
-                <div class="item <%= "active" if i.zero? %>" data-thumb="<%= i %>">
-                  <%= image_tag image.attachment(:large) %>
-                </div>
+                  <div class="item <%= "active" if i.zero? %>" data-thumb="<%= i %>">
+                    <%= image_tag image.attachment(:large) %>
+                  </div>
                 <% end %>
               </div>
             </div>
@@ -20,9 +20,9 @@
               <div id="thumbcarousel" class="carousel slide" data-interval="false">
                 <div class="carousel-inner">
                   <% @product.images.each_with_index do |image, i| %>
-                  <div data-target="#carousel" data-slide-to="<%= i %>" class="thumb">
-                    <%= image_tag image.attachment(:small) %>
-                  </div>
+                    <div data-target="#carousel" data-slide-to="<%= i %>" class="thumb">
+                      <%= image_tag image.attachment(:small) %>
+                    </div>
                   <% end %>
                 </div>
                 <a class="left carousel-control" href="#thumbcarousel" role="button" data-slide="prev">
@@ -64,6 +64,6 @@
         </div>
       </div>
     </div>
-    <%= render 'related_products',related_products: @related_products %>
+      <%= render 'related_products', related_products: @related_products %>
   </div>
 </section>

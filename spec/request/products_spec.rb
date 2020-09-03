@@ -5,7 +5,7 @@ RSpec.describe "Products", type: :request do
   describe "GET/potepan/products/id" do
     before { get potepan_product_path(product.id) }
 
-    it "２００レスポンスを返す" do
+    it "200レスポンスを返す" do
       expect(response.status).to eq 200
     end
     it "商品名が表示される" do
