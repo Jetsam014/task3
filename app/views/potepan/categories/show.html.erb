@@ -1,5 +1,5 @@
 <% provide(:title, @taxon.name) %>
-  <div class="main-wrapper">
+<div class="main-wrapper">
   <!-- LIGHT SECTION -->
   <section class="lightSection clearfix pageHeader">
     <div class="container">
@@ -15,7 +15,7 @@
               <%= link_to('Home', potepan_path) %>
             </li>
             <li>
-              <a href="#">shop</a>
+              <%= link_to('Shop', "#") %>
             </li>
             <li class="active"><%= @taxon.name %></li>
           </ol>
@@ -40,4 +40,4 @@
     </div>
   </section>
   <%= render 'high_brand_logo' %>
-  </div>
+</div>
